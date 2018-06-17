@@ -52,6 +52,10 @@
 - Google Apps Script |
 - Slack |
 
+---?image=beige/img/gas_install1.png
+
+---?image=beige/img/gas_install2.png
+
 ---
 
 ## Template Features
