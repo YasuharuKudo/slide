@@ -67,6 +67,26 @@
 
 ---
 
+## 書いてみる
+
+---
+
+```javascript
+function takeBreak() {
+  var date = new Date()
+  var today = date.getMonth() + "/" + date.getDate()
+  var to = "edo1km@gmail.com"
+  var subject = "【勤怠】 " + today + " 休暇"
+  var body = "各位\n\nお疲れ様です、工藤です。\n体調不良でお休みします。\nよろしくお願いいたします。\n\n以上"
+  MailApp.sendEmail(to, subject, body)
+}
+```
+
+@[3,5](日付はちゃんと入れる)
+@[6](文章を適度に変えるのは今後の課題)
+
+---
+
 ## Template Features
 
 - Code Presenting |
