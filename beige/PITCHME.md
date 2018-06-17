@@ -1,18 +1,30 @@
 # GASで遊ぼう
 
-### 〜 5分で勤怠自動化 〜
+### 〜 ルーチンワーク撲滅計画 〜
 
 ###### Maverick inc. @edochan
 
 ---
 
-## Tips!
+## Who are you?
 
 <br>
 
 @fa[arrows gp-tip](Press F to go Fullscreen)
 
 @fa[microphone gp-tip](Press S for Speaker Notes)
+
+---
+
+## 何やるの？
+
+### GAS使って業務の効率化
+
+---
+
+## GAS?
+
+### Google Apps Scriptの略
 
 ---
 
