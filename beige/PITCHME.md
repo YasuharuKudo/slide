@@ -54,14 +54,12 @@
 
 ---
 
-## How do you use GAS
+## How do you use GAS?
 
 - Google Account作る |
 - Google Driveを開く |
 - Google Apps Scriptのアプリの追加 |
 - Google Apps Scriptのファイルを作成 |
-
----
 
 ---?image=beige/img/gas_install1.png
 
