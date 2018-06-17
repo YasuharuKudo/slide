@@ -71,7 +71,7 @@
 
 ---
 
-## 書いてみる
+## Try to write
 
 ---
 
@@ -88,6 +88,24 @@ function takeBreak() {
 
 @[3,5](日付はちゃんと入れる)
 @[6](文章を適度に変えるのは今後の課題)
+
+---
+
+## Operation check
+
+---?image=beige/img/mail_test.png
+
+---
+
+### Next step
+
+- 動作確認は良さそう |
+- こいつを自動化する |
+- Slackのステータスを活用してみる |
+
+---
+
+### 
 
 ---
 
