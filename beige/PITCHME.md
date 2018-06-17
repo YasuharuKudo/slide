@@ -25,7 +25,11 @@
 
 ## What is GAS?
 
-- Google Apps Scriptの略 |
+- Google Apps Script |
+- Googleが提供しているJavaScript動作環境 |
+- GmailとかSpreadSheetとかその他外部サービスと連携できる |
+- Googleのアカウントがあれば好きに使える |
+- ただ！ |
 
 ---
 
