@@ -41,6 +41,19 @@
 
 ---
 
+## Let's try it!
+
+---
+
+## Ingredients
+
+- Google Account |
+- Google Drive |
+- Google Apps Script |
+- Slack |
+
+---
+
 ## Template Features
 
 - Code Presenting |
