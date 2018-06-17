@@ -61,6 +61,10 @@
 - Google Apps Scriptのアプリの追加 |
 - Google Apps Scriptのファイルを作成 |
 
+---
+
+## How to install GAS
+
 ---?image=beige/img/gas_install1.png
 
 ---?image=beige/img/gas_install2.png
