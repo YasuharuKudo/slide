@@ -52,6 +52,17 @@
 - Google Apps Script |
 - Slack |
 
+---
+
+## How do you use GAS
+
+- Google Account作る |
+- Google Driveを開く |
+- Google Apps Scriptのアプリの追加 |
+- Google Apps Scriptのファイルを作成 |
+
+---
+
 ---?image=beige/img/gas_install1.png
 
 ---?image=beige/img/gas_install2.png
