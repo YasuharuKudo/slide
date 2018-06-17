@@ -1,7 +1,8 @@
-# GASで遊ぼう
+# Let's play with the GAS!
+
+<br>
 
 ### 〜 ルーチンワーク撲滅計画 〜
-
 ###### Maverick inc. @edochan
 
 ---
@@ -16,15 +17,15 @@
 
 ---
 
-## 何やるの？
+## What are you doing?
 
-### GAS使って業務の効率化
+- GASの紹介 |
 
 ---
 
-## GAS?
+## What is GAS?
 
-### Google Apps Scriptの略
+- Google Apps Scriptの略 |
 
 ---
 
