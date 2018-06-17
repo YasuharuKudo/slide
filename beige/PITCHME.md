@@ -97,15 +97,39 @@ function takeBreak() {
 
 ---
 
-### Next step
-
-- 動作確認は良さそう |
-- こいつを自動化する |
-- Slackのステータスを活用してみる |
+## よさそう
 
 ---
 
-### 
+## Next step
+
+- こいつを自動化する |
+- Slackのステータスを活用してみよう |
+- Slackのステータスがアクティブじゃなかったら出す |
+- ステータスって取れるのか？多分取れるよね |
+
+---?image=beige/img/slackapi_users.getPreference.png
+
+---
+
+## いけそう
+
+### ok
+```javascript
+{
+    "ok": true,
+    "presence": "active"
+}
+```
+
+### ng
+
+```javascript
+{
+    "ok": false,
+    "error": "invalid_auth"
+}
+```
 
 ---
 
