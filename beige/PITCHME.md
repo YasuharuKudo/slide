@@ -33,6 +33,14 @@
 
 ---
 
+## Motivation
+
+- 不幸なことに何らかの発表ネタが必要となった |
+- 便利だけれどみんな触ってない？ |
+- LT資料作ったことなかったので練習 |
+
+---
+
 ## Template Features
 
 - Code Presenting |
