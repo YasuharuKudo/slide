@@ -199,8 +199,42 @@ function test() {
 
 - 動くことはわかったのでステータス取得の方法を見る |
 - Activeかどうかはpresenceに入ってる |
-- APIリファレンスを見てみる |
+- SlackAppのAPIリファレンスを見てみる |
 https://script.google.com/macros/library/d/M3W5Ut3Q39AaIwLquryEPMwV62A3znfOO/22
+
+---?image=beige/img/presence_set_active.png
+
+---?image=beige/img/presence_set_away.png
+
+---
+
+## SlackApp...
+
+- presenceを返してくれそうなものがない |
+- 別れを告げて自前で叩くことにする |
+- ユーザIDがわかればいいらしい |
+https://slack.com/api/users.list?token=[TOKEN]
+
+---
+
+```json
+{"id":"U03S4HQC1","team_id":"T02G57K6E","name":"edochan","deleted":false,"color":"4bbe2e","real_name":"yasuharu kudo","tz":"Asia\/Tokyo","tz_label":"Japan Standard Time","tz_offset":32400,"profile":{"title":"","phone":"090-2879-3871","skype":"edonaruto","real_name":"yasuharu kudo","real_name_normalized":"yasuharu kudo","display_name":"edochan","display_name_normalized":"edochan","status_text":"\u4eca\u65e5\u306f\u3055\u3048\u3066\u308b","status_emoji":":fire:","status_expiration":0,"avatar_hash":"90e3543f25ff","image_original":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_original.png","email":"edo1km@gmail.com","first_name":"yasuharu","last_name":"kudo","image_24":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_24.png","image_32":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_32.png","image_48":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_48.png","image_72":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_72.png","image_192":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_192.png","image_512":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_512.png","image_1024":"https:\/\/avatars.slack-edge.com\/2018-03-08\/325911563025_90e3543f25ffbb39a0b2_1024.png","status_text_canonical":"","team":"T02G57K6E","is_custom_image":true},"is_admin":false,"is_owner":false,"is_primary_owner":false,"is_restricted":false,"is_ultra_restricted":false,"is_bot":false,"updated":1529293236,"is_app_user":false,"has_2fa":false},
+```
+
+---
+
+### users.getPresenceを叩いてみる
+
+```javascript
+var url = "https://api.slack.com/methods/users.getPresence?"
+var params = new URLSearchParams()
+params.set("token", "ここにトークンを入れる")
+params.set("user", "自分のIDを入れる")
+fetch(url + params.toString()).then(
+  function(res) { return res.json() }
+).catch(function() { return false }
+).then(function(res) { return res.presence == "active" })
+```
 
 ---
 
