@@ -161,6 +161,7 @@ https://qiita.com/soundTricker/items/43267609a870fc9c7453
 https://api.slack.com/custom-integrations/legacy-tokens
 
 - レガシーらしいがよく調べていない |
+- 使おうとしたら承認されてなかった |
 
 ---?image=beige/img/approved_my_request.png&size=auto 90%
 
