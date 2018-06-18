@@ -137,8 +137,51 @@ https://api.slack.com/methods/users.getPresence
 
 ---
 
+## Slack Web APIを叩く
+
+- とりあえずfetch叩けばよい？ |
+- 認証どうするんだろう？ |
 
 ---
+
+## ライブラリ発掘
+
+https://qiita.com/soundTricker/items/43267609a870fc9c7453
+
+- Slackのトークンが必要 |
+- GASはライブラリキーというものを入れるとimportできるらしい |
+- このライブラリは活用させてもらう |
+
+---
+
+## Slack Legacy Tokens発行
+
+https://api.slack.com/custom-integrations/legacy-tokens
+
+- レガシーらしいがよく調べていない |
+
+---?image=beige/img/approved_my_request.png
+
+---
+
+
+
+
+```javascript
+var slackAccessToken = 'ここにアクセストークンを記載';
+function test() {
+  var slackApp = SlackApp.create(slackAccessToken);
+  // 対象チャンネル
+  var channelId = "#general";
+  // 投稿するメッセージ
+  var message = "I'm bot";
+  var options = {
+    // 投稿するユーザーの名前
+    username: "hirai_yuki"
+  }
+  slackApp.postMessage(channelId, message, options);
+}
+```
 
 ## Template Features
 
