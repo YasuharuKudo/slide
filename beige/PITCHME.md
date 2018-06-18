@@ -76,7 +76,7 @@
 ---
 
 ```javascript
-function takeBreak() {
+function takeVacation() {
   var date = new Date()
   var today = date.getMonth() + "/" + date.getDate()
   var to = "edo1km@gmail.com"
@@ -112,7 +112,9 @@ function takeBreak() {
 
 ---
 
-## いけそう
+## あった
+
+---
 
 ### ok
 ```javascript
