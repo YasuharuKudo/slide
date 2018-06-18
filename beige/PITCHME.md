@@ -54,7 +54,7 @@
 
 ---
 
-## How do you use GAS?
+## How to use GAS?
 
 - Google Account作る |
 - Google Driveを開く |
@@ -72,6 +72,8 @@
 ---
 
 ## Try to write
+
+- いったん書いてみる |
 
 ---
 
@@ -160,7 +162,9 @@ https://api.slack.com/custom-integrations/legacy-tokens
 
 - レガシーらしいがよく調べていない |
 
----?image=beige/img/approved_my_request.png
+---
+
+![Approve](beige/img/approved_my_request.png&size=auto 90%)
 
 ---
 
