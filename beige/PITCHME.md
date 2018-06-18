@@ -193,6 +193,8 @@ function test() {
 
 ---?image=beige/img/bot_test.png&size=auto 90%
 
+---
+
 ## Template Features
 
 - Code Presenting |
