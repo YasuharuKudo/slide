@@ -195,6 +195,15 @@ function test() {
 
 ---
 
+## ステータスを取る
+
+- 動くことはわかったのでステータス取得の方法を見る |
+- Activeかどうかはpresenceに入ってる |
+- APIリファレンスを見てみる |
+https://script.google.com/macros/library/d/M3W5Ut3Q39AaIwLquryEPMwV62A3znfOO/22
+
+---
+
 ## Template Features
 
 - Code Presenting |
