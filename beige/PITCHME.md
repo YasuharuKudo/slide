@@ -162,9 +162,7 @@ https://api.slack.com/custom-integrations/legacy-tokens
 
 - レガシーらしいがよく調べていない |
 
----
-
-![Approve](beige/img/approved_my_request.png&size=auto 90%)
+---?image=beige/img/approved_my_request.png&size=auto 90%
 
 ---
 
