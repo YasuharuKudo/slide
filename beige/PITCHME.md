@@ -114,6 +114,8 @@ function takeVacation() {
 
 ## あった
 
+https://api.slack.com/methods/users.getPresence
+
 ---
 
 ### ok
@@ -132,6 +134,9 @@ function takeVacation() {
     "error": "invalid_auth"
 }
 ```
+
+---
+
 
 ---
 
