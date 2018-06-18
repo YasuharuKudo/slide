@@ -167,24 +167,31 @@ https://api.slack.com/custom-integrations/legacy-tokens
 
 ---
 
+### SlackAppを試してみる
 
+- トークンは取れたので使ってみる |
+- 適当なコードを拾ってくる |
 
+---
+
+### サンプルコード
 
 ```javascript
 var slackAccessToken = 'ここにアクセストークンを記載';
 function test() {
-  var slackApp = SlackApp.create(slackAccessToken);
-  // 対象チャンネル
-  var channelId = "#general";
-  // 投稿するメッセージ
-  var message = "I'm bot";
+  var slackApp = SlackApp.create(slackAccessToken)
+  var channelId = "#unk"
+  var message = "I'm bot"
   var options = {
-    // 投稿するユーザーの名前
-    username: "hirai_yuki"
+    username: "edochan"
   }
   slackApp.postMessage(channelId, message, options);
 }
 ```
+
+@[4](サンプル文だと#generalだったのだが肥溜めに捨てる)
+
+---?image=beige/img/bot_test.png&size=auto 90%
 
 ## Template Features
 
