@@ -228,21 +228,22 @@ https://slack.com/api/users.list?token=[TOKEN]
 },
 ```
 
-@[2](IDはこれらしい)
+@[2](ID発見)
 
 ---
 
-### users.getPresenceを叩いてみる
+### users.getPresenceを試す
+
+consoleで叩くとこんな感じ
 
 ```javascript
 var url = "https://api.slack.com/methods/users.getPresence?"
 var params = new URLSearchParams()
 params.set("token", "ここにトークンを入れる")
 params.set("user", "自分のIDを入れる")
-fetch(url + params.toString()).then(
-  function(res) { return res.json() }
-).catch(function() { return false }
-).then(function(res) { return res.presence == "active" })
+fetch(url + params.toString()
+).then((e) => e.json()
+).then((json) => console.log(json.presence == "active"))
 ```
 
 ---
