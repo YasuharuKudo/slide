@@ -252,7 +252,6 @@ fetch(url + params.toString()
 
 Slackを立ち上げている時のusers.getPresenceのレスポンス
 
-
 ```json
 {
     "ok": true,
@@ -265,7 +264,7 @@ Slackを立ち上げている時のusers.getPresenceのレスポンス
 }
 ```
 
-@[3](Activeになっている)
+@[3](presenceは"active"になっている)
 
 ---
 
@@ -283,6 +282,42 @@ Slackを落としている時のusers.getPresenceのレスポンス
 ```
 
 @[3]("away"になっているので判別に使えそう)
+
+---
+
+### gasで書く
+
+```javascript
+var MY_SLACK_ID = "自分のID"
+var SLACK_ACCESS_TOKEN = 'Slackのアクセストークン';
+
+function attendanceCheck() {
+  if (!isActive(MY_SLACK_ID)) {
+    takeVacation()
+  }
+}
+
+function takeVacation() {
+  var date = new Date()
+  var today = date.getMonth() + 1 + "/" + date.getDate()
+  var to = "talent@mvrck.co.jp"
+  var subject = "【勤怠】 " + today + " 休暇"
+  var body = "各位\n\nお疲れ様です、工藤です。\n体調不良でお休みします。\nよろしくお願いいたします。\n\n以上"
+  MailApp.sendEmail(to, subject, body)
+}
+
+function isActive(userId) {
+  var params = "token=" + SLACK_ACCESS_TOKEN + "&user=" + userId
+  var response = JSON.parse(UrlFetchApp.fetch("https://slack.com/api/users.getPresence?" + params))
+  return response.presence == "active"
+}
+```
+
+@[10-17](おやすみメール発射装置)
+@[19-23](Slackのログイン状況を返すやつ)
+@[4-8](Slack立ち上がっていなかったらtakeVacationを叩く)
+
+---
 
 ## Template Features
 
