@@ -236,7 +236,7 @@ users.listのレスポンスを一部抜粋
 
 ### users.getPresenceを試す
 
-consoleで叩くとこんな感じ
+consoleで叩いてみる
 
 ```javascript
 var url = "https://api.slack.com/methods/users.getPresence?"
@@ -245,10 +245,44 @@ params.set("token", "ここにトークンを入れる")
 params.set("user", "自分のIDを入れる")
 fetch(url + params.toString()
 ).then((e) => e.json()
-).then((json) => console.log(json.presence == "active"))
+).then((json) => console.log(json))
 ```
 
 ---
+
+Slackを立ち上げている時のusers.getPresenceのレスポンス
+
+
+```json
+{
+    "ok": true,
+    "presence": "active",
+    "online": true,
+    "auto_away": false,
+    "manual_away": false,
+    "connection_count": 1,
+    "last_activity": 1529329712
+}
+```
+
+@[3](Activeになっている)
+
+---
+
+Slackを落としている時のusers.getPresenceのレスポンス
+
+```json
+{
+    "ok": true,
+    "presence": "away",
+    "online": false,
+    "auto_away": false,
+    "manual_away": false,
+    "connection_count": 0
+}
+```
+
+@[3]("away"になっているので判別に使えそう)
 
 ## Template Features
 
