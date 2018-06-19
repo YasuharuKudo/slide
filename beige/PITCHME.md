@@ -217,6 +217,8 @@ https://slack.com/api/users.list?token=[TOKEN]
 
 ---
 
+users.listのレスポンスを一部抜粋
+
 ```json
 {
   "id":"U03S4HQC1","team_id":"T02G57K6E","name":"edochan","deleted":false,"color":"4bbe2e",
