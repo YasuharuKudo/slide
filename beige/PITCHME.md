@@ -285,7 +285,7 @@ Slackを落としている時のusers.getPresenceのレスポンス
 
 ---
 
-### gasで書く
+<p><span class="slide-title">gasでのまとめ</span></p>
 
 ```javascript
 var MY_SLACK_ID = "自分のID"
@@ -316,6 +316,10 @@ function isActive(userId) {
 @[10-17](おやすみメール発射装置)
 @[19-23](Slackのログイン状況を返すやつ)
 @[4-8](Slack立ち上がっていなかったらtakeVacationを叩く)
+
+---
+
+## みんなもGASで楽しよう！
 
 ---
 
