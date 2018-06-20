@@ -319,9 +319,27 @@ function isActive(userId) {
 
 ---
 
-## みんなもGASで楽しよう！
+## 次はBOT
+
+- とりあえず天気でも返すやつを作る |
+- コードはコピペ |
+- Outgoing Webhookというやつが手軽らしい |
+https://api.slack.com/custom-integrations/outgoing-webhooks
+- 特定の文字列に反応して指定したURLにPOSTする |
+- このPOSTをGASのトリガーにする |
 
 ---
+
+## 手順
+
+- Outgoing Webhookのインストール(もうやったので多分好きに使える) |
+- どのチャンネルで何の文字列に反応してどこのURLをPOSTするか設定 |
+- GASでdoPostメソッドを用意したスクリプトをWebアプリケーションとして公開する。 |
+
+---?image=beige/img/weather.png&size=auto 90%
+
+---
+
 
 ## Template Features
 
